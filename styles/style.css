@@ -1,126 +1,135 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+   width: 100vw;
 }
 
 html {
+  font-family: 'roboto';
   font-size: 1.5rem;
 }
-
-.background p {
-  font-size: 30px;
-  margin-top: -25px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 header img {
   height: 50px;
 }
 
-.navbar {
-  width: 25vw;
+header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 3vw;
+}
+
+.navbar {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
   list-style-type: none;
 }
 
-.navbar li a {
-  text-decoration: none;
-  padding: 0 5px;
+.navbar a {
   color: black;
+  text-decoration: none;
 }
 
 .background {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 95vh;
   background-image: url("../images/landing.jpg");
+  background-position: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 2rem;
-  align-content: center;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 100vh;
-  justify-content: center;
 }
 
-.diferenciaisTitulo {
-  text-align: center;
-  border-bottom: 5px solid #00b172;
-  margin: 50px 600px;
+.background h1 {
+  margin-bottom: 0;
+  font-size: 95px;
+  font-weight: 600;
 }
 
-.diferenciais {
+.background p {
+  font-size: 30px;
+}
+
+/* ----middle-div---- */
+
+.middle-div {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  padding: 50px 50px;
-}
-
-.diferenciais h3 {
-  color: #00b172;
+  flex-direction: column ;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
 .item {
-  flex-basis: 20%;
+  text-align: center;
 }
 
-.diferenciais div img {
-  height: 100px;
+.item img{
+  width: 200px;
 }
 
-.diferenciais2 {
+.item h3{
+  color: #00B172;
+  font-weight: 900;
+  
+}
+
+.middle-div section {
   display: flex;
-  justify-content: space-between;
-  background-color: #00b172;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.middle-div h2{
+  align-self: center;
+  padding-bottom: 1px;
+  border-bottom: 5px solid #00B172;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+/* last div  */
+
+.last-div {
   height: 100vh;
-  color: #fff;
+  display: flex;
+  justify-content: space-around ;
   align-items: center;
-  margin: 0 4vh;
-  padding: 0 16vh;
-}
-
-.diferenciais2 h2 {
-  margin: 0 0 60px;
-  font-size: 1.6rem;
-}
-
-.diferenciais2 h3 {
-  font-size: 1.3rem;
-}
-
-.diferenciais2 p {
-  margin: 0 0 60px;
-}
-
-.diferenciais2 img {
-  height: 650px;
-}
-
-.item2 {
-  width: 50vh;
-}
-
-.logo {
   background-image: url("../images/spotify-icon-white.png");
-  width: 50px;
-  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: center;
+  background-color: #00B172;
+  color: white;
+}
+
+.last-div h2 {
+  font-size: 2rem;
+}
+
+.last-div h3{
+  font-size: 1.7rem;
+}
+
+.last-div p{
+  font-size: 1.5rem;
+}
+
+.last-div img {
+  width: 400px;
 }
